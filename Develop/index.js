@@ -1,5 +1,31 @@
 // array of questions for user
 const questions = [
+    {
+        message: "Welcome! What is your name?"
+        answer: "username"
+    }, 
+    {
+        message: "What is your email address?"
+        answer: "email"
+    },
+    {
+        message: "What is the title of your project?"
+        answer: "projTitle"
+
+    },
+    {
+        message: "Enter your project description:"
+        answer: "description"
+
+    },
+    {
+        message: "What is your Github profile name?",
+        name: "github"
+    }, 
+    {
+        message: "Are there any contribution guidelines?"
+        answer: "contribution"
+    }
 
 ];
 
