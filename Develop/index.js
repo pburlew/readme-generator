@@ -25,7 +25,19 @@ const questions = [
     {
         message: "Are there any contribution guidelines?"
         answer: "contribution"
-    }
+    },
+    {
+        message: "What dependencies should be used?"
+        answer: "dependencies"
+    },
+    {
+        message: "What type of license should be used?"
+        answer: "license"
+    },
+    {
+        message: "what year should be on the license?"
+        answer: "licenseyear"
+    },
 
 ];
 
