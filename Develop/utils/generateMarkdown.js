@@ -13,7 +13,7 @@ ${data.description}
 - [Description](#Description)
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Licence](#Licence)
+- [License](#License)
 - [Contributors](#Contributors)
 - [Test](#Test)
 - [Repository Link](#Repository)
