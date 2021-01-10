@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 const util = require("util");
-const open = require("open");
+//const open = require("open");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -65,5 +65,5 @@ async function init() {
     await writeToFile("README.md", htmlString, (err) => console.log(err));    
 };
 
-// function call to start program
+// function call to start/ program
 init();
