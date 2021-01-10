@@ -26,7 +26,7 @@ ${data.description}
 ${data.usage}
 
 ## License
-${data.licence}
+${data.license}
 
 ## Contributors
 ${data.contributing}

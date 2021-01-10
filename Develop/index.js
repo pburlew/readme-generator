@@ -1,44 +1,60 @@
+const inquirer = require("inquirer");
+const fs = require('fs');
+const axios = require("axios");
+const generate = require('./utils/generateMarkdown');
+
 // array of questions for user
 const questions = [
     {
-        message: "Welcome! What is your name?"
-        answer: "username"
-    }, 
-    {
-        message: "What is your email address?"
-        answer: "email"
+        type: "input",
+        name: "title",
+        message: "What is your project title?"
     },
     {
-        message: "What is the title of your project?"
-        answer: "projTitle"
-
+        type: "input",
+        name: "badge",
+        message: "Please provide the badges links that you want"
     },
     {
-        message: "Enter your project description:"
-        answer: "description"
-
+        type: "input",
+        name: "description",
+        message: "Please provide your project's description"
     },
     {
-        message: "What is your Github profile name?",
-        name: "github"
-    }, 
-    {
-        message: "Are there any contribution guidelines?"
-        answer: "contribution"
+        type: "input",
+        name: "installation",
+        message: "Please provide the installation instructions"
     },
     {
-        message: "What dependencies should be used?"
-        answer: "dependencies"
+        type: "input",
+        name: "usage",
+        message: "Please provide the project usage"
     },
     {
-        message: "What type of license should be used?"
-        answer: "license"
+        type: "input",
+        name: "licence",
+        message: "Please provide the project licence or your badge link"
     },
     {
-        message: "what year should be on the license?"
-        answer: "licenseyear"
+        type: "input",
+        name: "contributing",
+        message: "Please provide the contributing parties"
     },
-
+    {
+        type: "input",
+        name: "test",
+        message: "Please provide the project tests"
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "What is your github user name?"
+    },
+    {
+        type: "input",
+        name: "repo",
+        message: "What is your repo link?"
+    },
 ];
 
 // function to write README file
